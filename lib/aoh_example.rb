@@ -21,21 +21,21 @@ end
 def literal_aoh
   # Using Array literal syntax only, build a nested array that uses the data in
   # held in the constants
-  #   directors = [
-  #   director_1 = DON_G.sort,
-  #   director_2 = JOELLE_VD.sort,
-  #   director_3 = PAT_M.sort,
-  #   director_4 = KATE_G.sort,
-  #   director_5 = BRUCE_G.sort,
-  # ]
+    directors = [
+    director_1 = DON_G.sort,
+    director_2 = JOELLE_VD.sort,
+    director_3 = PAT_M.sort,
+    director_4 = KATE_G.sort,
+    director_5 = BRUCE_G.sort,
+  ]
   #I can't figure out why the above code doesn't match.
-  return [
-    {:name=>"Don Gately", :occupation=>"Live-in Staff"},
-    {:name=>"Joelle van Dyne", :occupation=>"Radio Personality"},
-    {:name=>"Pat Monteseian", :occupation=>"Staff"},
-    {:name=>"Kate Gompert", :occupation=>"None"},
-    {:name=>"Bruce Green", :occupation=>"Fan of Mildred"}]
-end
+#   return [
+#     {:name=>"Don Gately", :occupation=>"Live-in Staff"},
+#     {:name=>"Joelle van Dyne", :occupation=>"Radio Personality"},
+#     {:name=>"Pat Monteseian", :occupation=>"Staff"},
+#     {:name=>"Kate Gompert", :occupation=>"None"},
+#     {:name=>"Bruce Green", :occupation=>"Fan of Mildred"}]
+# end
 
 def aoh_lookup(aoh, row, key)
   aoh[row][key]
